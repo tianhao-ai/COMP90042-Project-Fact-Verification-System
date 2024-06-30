@@ -28,6 +28,8 @@ Below are the feedback of report from teaching teams:
 | Content    | Results          | 5           | 5            | Results are very convincing and clearly articulated.                                                                                                  |
 | Scholarship| Citation         | 4           | 3            | Missing citations for Transformers, cross encoder, and bi-encoder.                                                                                     |
 | **Total**  |                  | **35**      | **27**       |                                                                                                                                                      |
+
+
 The final marks: 27(Report) + 3(Codalab Bonus Mark) = 30
 
 # How to Reproduce the Submission File on Codalab
