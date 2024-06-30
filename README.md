@@ -92,3 +92,6 @@ NLTK: Download necessary data and tokenizers with:
 import nltk
 nltk.download('punkt')
 ```
+### Running Device
+- Tested Environment: Google Colab (Free Version)
+- Resources: GPU: Nvidia T4 (Free version of Colab), RAM: Up to 5GB, GPU RAM: Up to 4.5GB
