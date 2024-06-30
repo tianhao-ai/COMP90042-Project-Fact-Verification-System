@@ -5,12 +5,30 @@ This project focuses on classifying claims into four categories: SUPPORTS, REFUT
 
 Initially, we use the BM25 algorithm for evidence retrieval. To enhance the retrieval process, we implemented a custom encoder model to identify additional relevant evidence not captured by BM25. Subsequently, another encoder model is utilized to predict the claim label based on the retrieved evidence.
 
-# Result of the project
+# Ranking of the Project on Codalab
 According to the result from the final evaluation, our approachs could achieve 0.152 overall Harmonic Mean of F and A to classify claim:
 ![private and public result](final_score.png)
 also ranked 4th in the leaderboard:
 ![private and public result](final_ranking.png)
 finally, Received 3 bonus mark in Project 1 since rank in top 10
+
+# Result of the Project
+
+## Report Feedback Summary
+
+Below are the feedback of report from teaching teams:
+
+| Component  | Criteria         | Total Marks | Gained Marks | Reason for Deduction                                                                                                                                 |
+|------------|------------------|-------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Writing    | Clarity          | 5           | 4            | Understandable by most readers.                                                                                                                       |
+| Writing    | Tables/Figures   | 4           | 3            | Several tables and figures have vague and uninformative titles (i.e., Figure 2, Table 1, Table 4, Table 5). Table 1 has a different format.             |
+| Content    | Soundness        | 7          | 5            | Unclear how EDA provides insight, some values are randomly picked or not clearly explained, architecture design not clearly justified.                  |
+| Content    | Substance        | 5           | 4            | Students did more than expected but did not report scores for bi-encoder and cross encoder using RNN and LSTM.                                         |
+| Content    | Novelty          | 5           | 3            | Mostly replicating existing ideas.                                                                                                                    |
+| Content    | Results          | 5           | 5            | Results are very convincing and clearly articulated.                                                                                                  |
+| Scholarship| Citation         | 4           | 3            | Missing citations for Transformers, cross encoder, and bi-encoder.                                                                                     |
+| **Total**  |                  | **35**      | **27**       |                                                                                                                                                      |
+The final marks: 27(Report) + 3(Codalab Bonus Mark) = 30
 
 # How to Reproduce the Submission File on Codalab
 
