@@ -1,4 +1,4 @@
-# COMP90024-Project-Top-4-Solution-Fact-Verification-System
+# COMP90042-Project-Top-4-Solution-Fact-Verification-System
 
 # Project-Description
 This project focuses on classifying claims into four categories: SUPPORTS, REFUTES, NOT_ENOUGH_INFO, and DISPUTED. The classification is based on evidence retrieved from a corpus containing over a million pieces of evidence. Developed by the Natural Language Processing team at the University of Melbourne, this project employs a two-stage retrieval and classification approach.
@@ -18,15 +18,15 @@ finally, Received 3 bonus mark in Project 1 since rank in top 10
 
 Below are the feedback of report from teaching teams:
 
-| Component  | Criteria         | Total Marks | Gained Marks | Reason for Deduction                                                                                                                                 |
+| Component  | Criteria         | Total Marks | Gained Marks | Comments                                                                                                                                 |
 |------------|------------------|-------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Writing    | Clarity          | 5           | 4            | Understandable by most readers.                                                                                                                       |
-| Writing    | Tables/Figures   | 4           | 3            | Several tables and figures have vague and uninformative titles (i.e., Figure 2, Table 1, Table 4, Table 5). Table 1 has a different format.             |
+| Writing    | Tables/Figures   | 4           | 3            | (i) Several tables and figures have vague and uninformative titles (i.e., Figure 2, Table 1, Table 4, Table 5). Table 1 has a different format.             |
 | Content    | Soundness        | 7          | 5            | Unclear how EDA provides insight, some values are randomly picked or not clearly explained, architecture design not clearly justified.                  |
 | Content    | Substance        | 5           | 4            | Students did more than expected but did not report scores for bi-encoder and cross encoder using RNN and LSTM.                                         |
 | Content    | Novelty          | 5           | 3            | Mostly replicating existing ideas.                                                                                                                    |
 | Content    | Results          | 5           | 5            | Results are very convincing and clearly articulated.                                                                                                  |
-| Scholarship| Citation         | 4           | 3            | Missing citations for Transformers, cross encoder, and bi-encoder.                                                                                     |
+| Scholarship| Citation         | 4           | 3            | The cited sources are mostly credible and appropriate for the topic. Missing citations for Transformers, cross encoder, and bi-encoder.                                                                                     |
 | **Total**  |                  | **35**      | **27**       |                                                                                                                                                      |
 
 
@@ -115,3 +115,7 @@ nltk.download('punkt')
 ### Running Device
 - Tested Environment: Google Colab (Free Version)
 - Resources: GPU: Nvidia T4 (Free version of Colab), RAM: Up to 5GB, GPU RAM: Up to 4.5GB
+
+# Acknowledgments
+This program was created as a project for COMP90042 Natural Language Processing at University of Melbourne. Special thanks to teaching teams for their guidance and support.
+
