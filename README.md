@@ -39,7 +39,7 @@ finally, Received 3 bonus mark in Project 1 since rank in top 10
   - `test.csv`
   - `train.csv`
   - `evidence.csv`
-- **Description:** Performs an initial ranking of evidences using the BM25 algorithm and outputs the top 20 evidences.
+- **Description:** Preprocessing the claim and all evidences by remove punctuation and convert to lowercase, then lemmatize text and remove stopwords. Performing an initial ranking of evidences using the BM25 algorithm and outputs the top 20 evidences. In this stage, we found k1 = 0.5, and b = 0.85 could compromise the result between train and dev about their recall and precision.
 - **Output Files:**
   - `train_k05b085_bm25_top20.csv`
   - `dev_k05b085_bm25_top20.csv`
@@ -49,7 +49,7 @@ finally, Received 3 bonus mark in Project 1 since rank in top 10
 
 - **Notebook:** `step3_add_evidence.ipynb`
 - **Input Files:** All CSV files from previous steps
-- **Description:** Integrates additional evidence using a transformer-based model and outputs detailed results.
+- **Description:** The final retrieval result is based on the top 4 pieces of evidence found by BM25, combined with the top evidence ranked by a transformer model. The transformer uses a cross-encoder approach, where the claim and each of its top associated BM25 evidences are concatenated and evaluated to determine the probability of being a true claim-evidence pair. Due to restrictions on pretrained transformers imposed by the teaching team, the transformer model in this session is self-implemented. It includes word embeddings, positional embeddings, and two custom transformer blocks. 
 - **Output Files:**
   - `train_retrival_result_with_transformer.csv`
   - `dev_retrival_result_with_transformer.csv`
@@ -59,7 +59,7 @@ finally, Received 3 bonus mark in Project 1 since rank in top 10
 
 - **Notebook:** `step4_claim_label_cls.ipynb`
 - **Input Files:** Output from Step 3
-- **Description:** Combines evidence from BM25 and the transformer model to predict claim labels and produces the final output for competition submission.
+- **Description:** An encoder model is used to predict the claim label based on the concatenation of the claim text and all evidence found in Step 3. This model replicates the architecture from the previous step. However, achieving high claim classification accuracy is challenging if the retrieval F-Score in the evidence retrieval stages is unsatisfactory. Thus, improving our evidence retrieval process remains an area for further enhancement.
 - **Output File:**
   - `test-output.json`
 
@@ -80,3 +80,15 @@ To run the notebooks in this project, ensure you have the following packages ins
 - **NLTK:** For text processing and tokenization.
 - **Rank-BM25:** For implementing the BM25 algorithm for ranking.
 - **os, time, string, collections.Counter, ast:** For various utility functions and data structure manipulation.
+
+### Additional Steps
+Some libraries may require additional setup after installation:
+SpaCy: Download the English model with:
+```
+python -m spacy download en_core_web_sm
+```
+NLTK: Download necessary data and tokenizers with:
+```
+import nltk
+nltk.download('punkt')
+```
