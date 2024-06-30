@@ -1,4 +1,4 @@
-# COMP90024-Project-Fact-Verification-System-Top-4-Solution
+# COMP90024-Project-Top-4-Solution-Fact-Verification-System
 # Project-Description
 This project focuses on classifying claims into four categories: SUPPORTS, REFUTES, NOT_ENOUGH_INFO, and DISPUTED. The classification is based on evidence retrieved from a corpus containing over a million pieces of evidence. Developed by the Natural Language Processing team at the University of Melbourne, this project employs a two-stage retrieval and classification approach.
 
