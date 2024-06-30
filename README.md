@@ -5,7 +5,7 @@ This project focuses on classifying claims into four categories: SUPPORTS, REFUT
 Initially, we use the BM25 algorithm for evidence retrieval. To enhance the retrieval process, we implemented a custom encoder model to identify additional relevant evidence not captured by BM25. Subsequently, another encoder model is utilized to predict the claim label based on the retrieved evidence.
 # Result of the project
 According to the result from the final evaluation, our approachs could achieve 0.152 overall Harmonic Mean of F and A to classify claim:
-![private and public result](graph/lgb_accuracy.png)
+![private and public result](final_score.png)
 also ranked 4th in the leaderboard:
-![private and public result](graph/kaggle_rank.png)
+![private and public result](final_ranking.png)
 finally, Received 3 bonus mark in Project 1 since rank in top 10
